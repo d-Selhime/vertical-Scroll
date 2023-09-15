@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="viewport" content="width=device-width, initial scale=1.0"/>
+    <meta name="robots" content="no index">
+    <title>Vertical Scroll to Reveal</title>  
+    <style type="text/css">
+        /*Outlook.com Outlook 2007/2010/2012 overrides*/
+.ExternalClass{
+    width:100%;
+}
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+    line-height: 100%;
+}
+#outlook a {padding:0;}
+.ReadMsgBody {width:100%;}
+table{
+    mso-table-lspace:0pt;
+    mso-table-rspace:0pt;
+}
+ img {
+     -ms-interpolation-mode:bicubic;
+    }
+ a[href^=tel], .nolinkcolor > a, #MessageViewBody a, a[x-apple-data-detectors], #body a {
+     color: inherit;
+     text-decoration: none;
+     font-size: inherit;
+     font-family: inherit;
+     font-weight: inherit;
+     line-height: inherit;
+         }
+body {
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+}
+table, td {
+        border-collapse:collapse;
+    }
+ sup {
+-webkit-text-size-adjust: none;
+}         
+        
+    .fallback {
+      display: none;
+    }
+    .slider_container {
+      display: block !important;
+      max-height: none !important;
+      position: relative;
+    }
+    #MessageViewBody .fallback,
+    body.MsgBody .fallback,
+    [owa] .fallback {
+      display: block;
+    }
+    #MessageViewBody .slider_container,
+    body.MsgBody .slider_container,
+    [owa] .slider_container {
+      display: none !important;
+    }
+    @media screen yahoo {
+      .fallback {
+        display: block;
+      }
+      .slider_container {
+        display: none !important;
+      }
+    }     
+   @media screen yahoo and (max-width:480px){
+      .fallback {
+        display: none !important;
+      }
+      .slider_container {
+        display: none !important;
+      }
+    }      
+    .slider .outer {
+        background-image: url(http://staging.digitaldesign.epsilon.com/AutoZone/images/$25-FallCareMonth-640scroll.gif);
+        background-repeat:no-repeat;
+        background-size:cover; 
+        background-position: center center;
+        width: 100%;
+        height: 243px; 
+         max-height: 100%;
+        overflow: hidden;
+    }
+
+    .slider .frame {
+        width: 100%;
+        height: 243px;
+        overflow: auto;
+    }
+
+    .slider img {
+        border: 0
+    }
+
+    .slider a {
+        display: block;
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .slider .inner {
+        padding-top: 273px;
+        width: 100%;		
+    }
+    .mobilecontent {
+        display: none;
+        max-height: none;
+      }    
+        
+@media screen and (max-width: 480px){
+    .full{width: 100% !important;}
+    .fullgmail{width:100% !important;min-width:100% !important;}
+    .displayBlock{width:100% !important;display:block !important;}
+    .hide{display:none !important;}
+    .imgwdth{width: 100% !important;height: auto !important;}
+    .padmain{padding-left: 15px !important;padding-right:15px !important;}
+    .autowidth{width: auto !important;}
+    .autoheight{height: auto !important;}
+    
+    
+     .mobilecontent {
+        display: block !important;
+        max-height: 100% !important;
+        width: 100%;
+        min-width: 100%;
+        margin: 0 auto !important;
+    }
+         .slider_container {
+        display: none !important;
+      } 
+       .slider_m .outer {
+        background-image: url(http://staging.digitaldesign.epsilon.com/AutoZone/images/FallCareMonth-480TopImage.gif);
+        background-repeat:no-repeat;
+        background-size:cover; 
+        width: 100%;
+        height: 100%; 
+        overflow: hidden;
+        margin: 0 auto !important;
+        
+      }
+    
+  .slider_m .inner {
+        padding-top: 615px;
+        width: 100%;		
+    }
+     .slider_m .frame {
+        width: 100%;
+        max-height: 615px; 
+        overflow: auto;
+      }
+
+     
+        }
+    
+    @media screen and (max-width: 414px){
+
+        .mobilecontent {
+        display: block !important;
+        max-height: 100% !important;
+        width: 100%;
+            min-width: 100%;
+            margin: 0 auto !important;
+    }
+         .slider_container {
+        display: none !important;
+      } 
+      
+      .slider_m .frame {
+        width: 100%;
+        max-height: 522px; 
+        overflow: auto;
+      }
+
+      .slider_m img {
+        border: 0
+      }
+
+      .slider_m a {
+        display: block;
+        margin-top: 0px;
+        width: 100%;
+      }
+
+      .slider_m .frame {
+        width: 100%;
+        max-height: 615px; 
+        overflow: auto;
+      }
+
+      .slider_m .inner {
+        padding-top: 615px;
+        width: 100%;		
+      }
+    }
+        
+
+         @media only screen and (max-width: 375px) {
+             .slider_m .outer {
+        background-size:375px 453px;
+        width: 375px;
+        height: 423px; 
+      }
+      .slider_m .frame {
+        height: 423px; 
+      }
+      .slider_m a {
+        width: 100%;
+      }
+      .slider_m .inner {
+        padding-top: 453px;
+        width: 100%;
+      }
+      .slider_m .inner img {
+        width: 100%;
+        height: 423px;
+      }
+        }
+        
+         @media only screen and (max-width: 360px) {
+              .slider_m .outer {
+        background-size:360px 435px;
+        width: 360px;
+        height: 435px; 
+      }
+      .slider_m .frame {
+        height: 435px; 
+      }
+      .slider_m a {
+        width: 360px;
+      }
+      .slider_m .inner {
+        padding-top: 435px;
+        width: 360px;
+      }
+      .slider_m .inner img {
+        width: 360px;
+        height: 435px;
+      }
+        }
+        
+        @media only screen and (max-width: 320px) {
+      .slider_m .outer {
+        background-size:320px 386px;
+        width: 320px;
+        height: 386px; 
+      }
+      .slider_m .frame {
+        height: 386px; 
+      }
+      .slider_m a {
+        width: 320px;
+      }
+      .slider_m .inner {
+        padding-top: 386px;
+        width: 320px;
+      }
+      .slider_m .inner img {
+        width: 320px;
+        height: 386px;
+      }
+    }
+       
+        
+          /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE 
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u ~ div .email-container {
+                min-width: 320px !important;
+            }
+        }*/
+        /* iPhone 6, 6S, 7, 8, and X 
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u ~ div .email-container {
+                min-width: 375px !important;
+            }
+        }
+        /* iPhone 6+, 7+, and 8+ 
+        @media only screen and (min-device-width: 414px) {
+            u ~ div .email-container {
+                min-width: 414px !important;
+            }
+        }*/
+    </style>
+     
+<!--[if gte mso 9]>
+<xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+      <!--[if gte mso 9]>
+  <style type="text/css">
+    .fallback {
+      display: none !important;
+    }
+.outlookFallback {
+      display: block !important;
+    }
+  </style>
+  <![endif]-->
+</head>
+<body id="body" style="margin: 0px; padding: 0px; background-color: #ffffff;">
+<!-- Yahoo Wrapper -->
+<table role="presentation" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td class="full" align="center" style="background-color: #ffffff;">
+<!-- Gmail Wrapper -->
+<table role="presentation" width="640" border="0" align="center" cellpadding="0" cellspacing="0" style="min-width:640px;" class="fullgmail">
+<tr>
+<td align="center" style="vertical-align: top; padding: 0px 0px 0px 0px;" class="fullgmail">
+    
+  <!--INSERT DESKTOP INTERACTIVE HTML CONTENT HERE-->
+    
+    <!--[if !mso]><!-->
+
+<div class="slider_container full" style="overflow:hidden;display:none;max-height:0px;width:100%; background-color: #f2f2f2;">
+    <table role="presentation" bgcolor="#f2f2f2" cellpadding="0" cellspacing="0" border="0" align="center">
+        <tr>
+            <td bgcolor="#f2f2f2" valign="top" align="center" style="font-family: 'Arial Black',Arial, sans-serif; font-size: 30px;padding:10px 0px 20px 0px"><strong>[SCROLL] TO REVEAL AN OFFER</strong><br />
+<span style="font-family: Arial, sans-serif">YOU'LL JUMP FOR</span></td>
+        </tr>
+    </table>
+<table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" align="center" width="100%" class="slider full">
+<div class="outer full">
+<div class="frame full">
+<div class="inner full"><a href="#" target="_top"><img class="autoheight" src="http://staging.digitaldesign.epsilon.com/AutoZone/images/AZ_RideControl_FallCarCareMonth_640-R4_05.jpg" width="640" height="243" alt="$25 OFF $200 OR MORE - Get Offer >" style="display:block">
+</a></div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!--<![endif]-->  
+<!--END DESKTOP INTERACTIVE CONTENT-->
+  <!--START FALLBACK CONTENT FOR OUTLOOK DESKTOP CLIENTS LIKE A STATIC IMAGE-->
+    <!--[if gte mso 9]>
+    <table class="full" role="presentation" bgcolor="#f2f2f2" cellpadding="0" cellspacing="0" border="0" align="center">
+        <tr>
+            <td bgcolor="#f2f2f2" valign="top" align="center" ><a href="#" target="_blank"><img  src="http://staging.digitaldesign.epsilon.com/AutoZone/images/AZ_RideControl_FallCarCareMonth_640-R4_05.jpg" width="640" height="243" alt="$25 OFF $200 OR MORE - Get Offer >" style="display:block;" border="0"></a></td>
+        </tr>
+    </table>
+<![endif]-->
+   <!--END FALLBACK CONTENT FOR OUTLOOK DESKTOP CLIENTS--> 
+    
+<!--START FALLBACK CONTENT FOR NON-OUTLOOK DESKTOP CLIENTS LIKE AN ANIMATION-->
+    
+<div class="fallback full"><a href="#" target="_blank"><img  src="http://staging.digitaldesign.epsilon.com/AutoZone/images/$25-FallCareMonth-640scroll-NonSupportedGif.gif" width="640" height="243" alt="Fall Car Care Month" style="display:block;" border="0"></a>
+</div>
+    
+<!--END FALLBACK CONTENT FOR DESKTOP CLIENTS-->
+    
+<!--START INTERACTIVE MOBILE CONTENT -->
+<!--[if !mso]><!-->
+  
+<div class="mobilecontent" style="display:none;max-height:0px;overflow:hidden;">
+    <div class="textBlock"><table role="presentation" bgcolor="#f2f2f2" cellpadding="0" cellspacing="0" border="0" align="center">
+        <tr>
+            <td bgcolor="#f2f2f2" valign="top" align="center" style="font-family: 'Arial Black',Arial, sans-serif; font-size: 30px;padding:10px 35px 20px 35px"><strong>[SWIPE UP] TO REVEAL AN OFFER</strong><br> <span style="font-family: Arial, sans-serif">YOU'LL JUMP FOR</span></td>
+        </tr>
+    </table>
+    </div>
+<table role="presentation" class="full" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+<tbody>
+<tr>
+<td class="slider_m"> 
+<div class="outer">
+<div class="frame">
+   
+<div class="inner"><a href="#" target="_top"><img src="http://staging.digitaldesign.epsilon.com/AutoZone/images/$25-FallCareMonth-480Scroll.jpg" alt="$25 OFF $200 OR MORE - Get Offer >" style="display:block;">
+</a></div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!--<![endif]-->
+    <!--/END INTERACTIVE MOBILE CONTENT-->
+    
+           </td>
+         </tr>
+        </table>
+<!-- /Gmail Wrapper -->
+</td>
+</tr>
+</table>
+<!-- Yahoo Wrapper -->
+</body>
+</html>
